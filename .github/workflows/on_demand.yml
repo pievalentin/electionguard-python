@@ -2,14 +2,6 @@ name: Validate Pull Request
 
 on:
   workflow_dispatch:
-  push:
-    branches: [main, "integration/**", "releases/**"]
-  pull_request:
-    branches: [main, "integration/**", "releases/**"]
-  repository_dispatch:
-    types: [pull_request]
-  schedule:
-    - cron: "30 23 * * 1" # 2330 UTC Every Monday
 
 env:
   PYTHON_VERSION: 3.9
